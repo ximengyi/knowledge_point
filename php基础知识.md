@@ -1,8 +1,10 @@
-1 requeire include
+##### 1 requeire与 include
+
 require则会导致一个致命性错误且脚本停止执行
 include在引入不存文件时产生一个警告且脚本还会继续执行
     
-2 get post
+
+##### 2 get post
 
 GET 和 POST 方法没有实质区别，只是报文格式不同
 GET 和 POST 只是 HTTP 协议中两种请求方式，而 HTTP 协议是基于 TCP/IP 的应用层协议，无论 GET 还是 POST，用的都是同一个传输层协议，所以在传输上，没有区别
@@ -10,13 +12,6 @@ GET 方法的参数应该放在 url 中，POST 方法参数应该放在 body 中
 get 和post 都是不安全的，都可以完整的截获报文
 
 
-
-3 innodb myisam
-innodb 是行级锁，myisam是表级锁，频繁写用innodb 频繁读用myisam
-innodb 支持事务，myisam不支持事务
-inodb 支持外键，myisam不支持外键
-myisam的索引以表名+.MYI文件分别保存。
-innodb的索引和数据一起保存在表空间里
 
 4 array_merge array+
 array_merge相同的字符串键名后者会替代前者，相同的数字键名，后者不会替代前者，而是数字会重新排序
@@ -75,6 +70,8 @@ echo $name;
 6
 
 implode ( string $glue , array $pieces ) : string 将一维数组转化为字符串
+
+7设置定时脚本
 
 10 redis 问题
 https://www.cnblogs.com/jasontec/p/9699242.html
